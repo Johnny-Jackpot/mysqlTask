@@ -1,0 +1,86 @@
+SELECT
+  CONCAT(actors.name, ' ', actors.surname) 
+    AS actor_full_name,
+  SUM(fee.cash) 
+    AS amount_of_fees
+FROM 
+  actors
+INNER JOIN 
+  films_actors 
+ON 
+  actors.id = films_actors.actor_id
+INNER JOIN 
+  fee 
+ON 
+  fee.id = films_actors.fee_id
+WHERE
+  TIMESTAMPDIFF(YEAR, actors.birth, CURDATE()) >= 40
+AND
+  TIMESTAMPDIFF(YEAR, actors.birth, CURDATE()) <= 60
+GROUP BY 
+  actors.id
+ORDER BY 
+  amount_of_fees 
+DESC;
+----------------------------------------------------------
+SELECT
+  studios.name AS studio,
+  CONCAT(actors.name, ' ', actors.surname) 
+    AS actor_full_name,
+  COUNT(films.title) AS number_of_films
+FROM
+  studios
+INNER JOIN
+  films
+ON
+  studios.id = films.studio_id
+INNER JOIN
+  films_actors
+ON
+  films.id = films_actors.film_id
+INNER JOIN
+  actors
+ON
+  films_actors.actor_id = actors.id
+GROUP BY
+  studio,
+  actor_full_name
+----------------------------------------------------------
+SELECT 
+  CONCAT(a.name, ' ', a.surname) AS actor_full_name
+FROM 
+  actors AS a 
+INNER JOIN 
+  actors AS b 
+ON 
+  a.surname = b.surname 
+GROUP BY 
+  b.surname, 
+  a.name 
+HAVING 
+  COUNT(b.surname) = 1
+-----------------------------------------------------------
+SELECT  
+  studios.name AS studio,
+  COUNT(DISTINCT films.id) AS number_of_films,
+  COUNT(fee.cash) AS number_of_payments,
+  SUM(fee.cash) AS sum_of_fees,
+  ROUND(AVG(fee.cash)) AS average_fee
+FROM
+  films
+INNER JOIN
+  studios
+ON
+  films.studio_id = studios.id
+INNER JOIN
+  films_actors
+ON
+  films.id = films_actors.film_id
+INNER JOIN
+  fee
+ON
+  films_actors.fee_id = fee.id
+WHERE
+  (YEAR(CURDATE()) - films.release_date) <= 10
+GROUP BY
+  studio
