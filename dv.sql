@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1
--- Час створення: Трв 02 2017 р., 15:34
+-- Час створення: Трв 02 2017 р., 16:15
 -- Версія сервера: 5.7.14
 -- Версія PHP: 5.6.25
 
@@ -131,28 +131,29 @@ CREATE TABLE `films` (
   `budget` int(11) DEFAULT NULL,
   `box_office` int(11) DEFAULT NULL,
   `running_time` int(3) DEFAULT NULL,
-  `studio_id` int(11) DEFAULT NULL
+  `studio_id` int(11) DEFAULT NULL,
+  `genre` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Дамп даних таблиці `films`
 --
 
-INSERT INTO `films` (`id`, `title`, `director`, `release_date`, `budget`, `box_office`, `running_time`, `studio_id`) VALUES
-(1, 'The Fate of the Furious', 'Felix Gary Gray', 2017, 250000000, 910800000, 136, 1),
-(2, 'Escape Plan', 'Jan Mikael Hafstrom', 2013, 50000000, 137300000, 115, 2),
-(3, 'John Rambo', 'Sylvester Stallone', 2008, 50000000, 113200000, 92, 3),
-(4, 'The Spy Next Door', 'Brian Levant', 2010, 28000000, 45200000, 95, 3),
-(5, 'Mad Max: Fury Road', 'George Miller', 2015, 150000000, 373570581, 120, 5),
-(6, 'Furious 7', 'James Wan', 2015, 190000000, 1516045911, 137, 1),
-(7, 'RocknRolla', 'Guy Stuart Ritchie', 2008, 18000000, 25728089, 114, 5),
-(8, 'AEon Flux', 'Karyn Kiyoko Kusama', 2005, 62000000, 52300000, 93, 6),
-(9, 'Fast & Furious 6', 'Justin Lin', 2013, 160000000, 771800000, 130, 1),
-(10, 'Fast Five', 'Justin Lin', 2011, 125000000, 601900000, 98, 1),
-(11, 'Transformers: Dark of the Moon', 'Michael Benjamin Bay', 2011, 195000000, 1106450000, 155, 7),
-(12, 'Haywire', 'Steven Soderbergh', 2011, 23000000, 33400000, 93, 4),
-(13, 'The Expendables', 'Sylvester Stallone', 2010, 82000000, 274000000, 103, 3),
-(14, 'Suicide Squad', 'David Ayer', 2016, 175000000, 745600054, 123, 8);
+INSERT INTO `films` (`id`, `title`, `director`, `release_date`, `budget`, `box_office`, `running_time`, `studio_id`, `genre`) VALUES
+(1, 'The Fate of the Furious', 'Felix Gary Gray', 2017, 250000000, 910800000, 136, 1, 'action'),
+(2, 'Escape Plan', 'Jan Mikael Hafstrom', 2013, 50000000, 137300000, 115, 2, 'action'),
+(3, 'John Rambo', 'Sylvester Stallone', 2008, 50000000, 113200000, 92, 3, 'thriller'),
+(4, 'The Spy Next Door', 'Brian Levant', 2010, 28000000, 45200000, 95, 3, 'comedy'),
+(5, 'Mad Max: Fury Road', 'George Miller', 2015, 150000000, 373570581, 120, 5, 'action'),
+(6, 'Furious 7', 'James Wan', 2015, 190000000, 1516045911, 137, 1, 'action'),
+(7, 'RocknRolla', 'Guy Stuart Ritchie', 2008, 18000000, 25728089, 114, 5, 'crime'),
+(8, 'AEon Flux', 'Karyn Kiyoko Kusama', 2005, 62000000, 52300000, 93, 6, 'fantasy'),
+(9, 'Fast & Furious 6', 'Justin Lin', 2013, 160000000, 771800000, 130, 1, 'action'),
+(10, 'Fast Five', 'Justin Lin', 2011, 125000000, 601900000, 98, 1, 'action'),
+(11, 'Transformers: Dark of the Moon', 'Michael Benjamin Bay', 2011, 195000000, 1106450000, 155, 7, 'fantasy'),
+(12, 'Haywire', 'Steven Soderbergh', 2011, 23000000, 33400000, 93, 4, 'action'),
+(13, 'The Expendables', 'Sylvester Stallone', 2010, 82000000, 274000000, 103, 3, 'action'),
+(14, 'Suicide Squad', 'David Ayer', 2016, 175000000, 745600054, 123, 8, 'fantasy\n');
 
 -- --------------------------------------------------------
 
@@ -216,82 +217,6 @@ INSERT INTO `films_actors` (`film_id`, `actor_id`, `fee_id`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблиці `films_genres`
---
-
-CREATE TABLE `films_genres` (
-  `film_id` int(11) NOT NULL,
-  `genre_id` int(3) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Дамп даних таблиці `films_genres`
---
-
-INSERT INTO `films_genres` (`film_id`, `genre_id`) VALUES
-(1, 1),
-(2, 1),
-(3, 1),
-(5, 1),
-(6, 1),
-(7, 1),
-(8, 1),
-(9, 1),
-(10, 1),
-(11, 1),
-(12, 1),
-(13, 1),
-(14, 1),
-(1, 2),
-(2, 2),
-(3, 2),
-(6, 2),
-(7, 2),
-(9, 2),
-(12, 2),
-(3, 3),
-(4, 4),
-(7, 4),
-(5, 5),
-(8, 5),
-(6, 6),
-(7, 6),
-(9, 6),
-(8, 7),
-(11, 7),
-(9, 8),
-(13, 8),
-(14, 9);
-
--- --------------------------------------------------------
-
---
--- Структура таблиці `genres`
---
-
-CREATE TABLE `genres` (
-  `id` int(3) NOT NULL,
-  `genre` varchar(50) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
-
---
--- Дамп даних таблиці `genres`
---
-
-INSERT INTO `genres` (`id`, `genre`) VALUES
-(1, 'action\r'),
-(2, 'thriller\r'),
-(3, 'drama\r'),
-(4, 'comedy\r'),
-(5, 'post-apocalyptic\r'),
-(6, 'crime\r'),
-(7, 'fantasy\r'),
-(8, 'adventures\r'),
-(9, 'superhero');
-
--- --------------------------------------------------------
-
---
 -- Структура таблиці `studios`
 --
 
@@ -348,19 +273,6 @@ ALTER TABLE `films_actors`
   ADD KEY `actor_id` (`actor_id`);
 
 --
--- Індекси таблиці `films_genres`
---
-ALTER TABLE `films_genres`
-  ADD PRIMARY KEY (`film_id`,`genre_id`),
-  ADD KEY `genre_id` (`genre_id`);
-
---
--- Індекси таблиці `genres`
---
-ALTER TABLE `genres`
-  ADD PRIMARY KEY (`id`);
-
---
 -- Індекси таблиці `studios`
 --
 ALTER TABLE `studios`
@@ -386,11 +298,6 @@ ALTER TABLE `fee`
 ALTER TABLE `films`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 --
--- AUTO_INCREMENT для таблиці `genres`
---
-ALTER TABLE `genres`
-  MODIFY `id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
---
 -- AUTO_INCREMENT для таблиці `studios`
 --
 ALTER TABLE `studios`
@@ -412,13 +319,6 @@ ALTER TABLE `films_actors`
   ADD CONSTRAINT `films_actors_ibfk_1` FOREIGN KEY (`actor_id`) REFERENCES `actors` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `films_actors_ibfk_2` FOREIGN KEY (`film_id`) REFERENCES `films` (`id`) ON UPDATE CASCADE,
   ADD CONSTRAINT `films_actors_ibfk_3` FOREIGN KEY (`fee_id`) REFERENCES `fee` (`id`) ON UPDATE CASCADE;
-
---
--- Обмеження зовнішнього ключа таблиці `films_genres`
---
-ALTER TABLE `films_genres`
-  ADD CONSTRAINT `films_genres_ibfk_1` FOREIGN KEY (`genre_id`) REFERENCES `genres` (`id`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `films_genres_ibfk_2` FOREIGN KEY (`film_id`) REFERENCES `films` (`id`) ON UPDATE CASCADE;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
