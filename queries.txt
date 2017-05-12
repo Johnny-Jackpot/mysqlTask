@@ -1,26 +1,22 @@
 SELECT
   CONCAT(actors.name, ' ', actors.surname) 
     AS actor_full_name,
-  SUM(fee.cash) 
-    AS amount_of_fees
+  SUM(films_actors.fee) 
+    AS total_fees
 FROM 
   actors
 INNER JOIN 
   films_actors 
 ON 
   actors.id = films_actors.actor_id
-INNER JOIN 
-  fee 
-ON 
-  fee.id = films_actors.fee_id
 WHERE
-  TIMESTAMPDIFF(YEAR, actors.birth, CURDATE()) >= 40
+  ADDDATE(CURDATE(), INTERVAL -60 YEAR) <= actors.dob  
 AND
-  TIMESTAMPDIFF(YEAR, actors.birth, CURDATE()) <= 60
+  actors.dob <= ADDDATE(CURDATE(), INTERVAL -40 YEAR)
 GROUP BY 
   actors.id
 ORDER BY 
-  amount_of_fees 
+  total_fees 
 DESC;
 ----------------------------------------------------------
 SELECT
@@ -42,9 +38,11 @@ INNER JOIN
   actors
 ON
   films_actors.actor_id = actors.id
+WHERE
+  studios.id = 1
 GROUP BY
-  studio,
-  actor_full_name
+  studios.id,
+  actors.id
 ----------------------------------------------------------
 SELECT 
   CONCAT(a.name, ' ', a.surname) AS actor_full_name
@@ -63,9 +61,9 @@ HAVING
 SELECT  
   studios.name AS studio,
   COUNT(DISTINCT films.id) AS number_of_films,
-  COUNT(fee.cash) AS number_of_payments,
-  SUM(fee.cash) AS sum_of_fees,
-  ROUND(AVG(fee.cash)) AS average_fee
+  COUNT(films_actors.fee) AS number_of_payments,
+  SUM(films_actors.fee) AS sum_of_fees,
+  ROUND(AVG(films_actors.fee)) AS average_fee
 FROM
   films
 INNER JOIN
@@ -76,11 +74,9 @@ INNER JOIN
   films_actors
 ON
   films.id = films_actors.film_id
-INNER JOIN
-  fee
-ON
-  films_actors.fee_id = fee.id
 WHERE
-  (YEAR(CURDATE()) - films.release_date) <= 10
+  ADDDATE(CURDATE(), INTERVAL -10 YEAR) <= films.release_date
 GROUP BY
+  studios.id
+ORDER BY
   studio
