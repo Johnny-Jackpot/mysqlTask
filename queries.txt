@@ -57,6 +57,24 @@ GROUP BY
   a.name 
 HAVING 
   COUNT(b.surname) = 1
+
+###
+
+SELECT 
+  ANY_VALUE(CONCAT(actors.name, ' ', actors.surname)) 
+    AS actor_full_name
+FROM 
+  actors
+GROUP BY 
+  actors.surname
+HAVING 
+  COUNT(actors.surname) = 1
+ORDER BY
+  actor_full_name
+
+###
+
+
 -----------------------------------------------------------
 SELECT  
   studios.name AS studio,
@@ -79,4 +97,5 @@ WHERE
 GROUP BY
   studios.id
 ORDER BY
-  studio
+  average_fee
+DESC

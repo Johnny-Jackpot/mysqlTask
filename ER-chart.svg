@@ -2,85 +2,96 @@
 <!DOCTYPE svg
 PUBLIC "-//W3C//DTD SVG 1.1//EN"
        "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg viewBox="185 155 769 460" width="584px" height="305px" xmlns="http://www.w3.org/2000/svg" version="1.1">
-   <line x1="357" y1="348" x2="347" y2="348" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="278" y1="275" x2="268" y2="275" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="347" y1="348" x2="278" y2="275" style="stroke:#bbb;stroke-width:1;"/>
-   <line x1="349.5" y1="348" x2="353.03553390593" y2="351.53553390593" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="349.5" y1="348" x2="353.03553390593" y2="344.46446609407" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="273" y1="275" x2="276.53553390593" y2="278.53553390593" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="273" y1="275" x2="276.53553390593" y2="271.46446609407" style="stroke:#bbb;stroke-width:2;"/>
-   <line x1="626" y1="277" x2="636" y2="277" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="672" y1="200" x2="682" y2="200" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="636" y1="277" x2="672" y2="200" style="stroke:#b0b;stroke-width:1;"/>
-   <line x1="633.5" y1="277" x2="629.96446609407" y2="280.53553390593" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="633.5" y1="277" x2="629.96446609407" y2="273.46446609407" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="677" y1="200" x2="673.46446609407" y2="203.53553390593" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="677" y1="200" x2="673.46446609407" y2="196.46446609407" style="stroke:#b0b;stroke-width:2;"/>
-   <line x1="535" y1="257" x2="525" y2="257" style="stroke:#333;stroke-width:1;"/>
-   <line x1="466" y1="208" x2="456" y2="208" style="stroke:#333;stroke-width:1;"/>
-   <line x1="525" y1="257" x2="466" y2="208" style="stroke:#333;stroke-width:1;"/>
-   <line x1="527.5" y1="257" x2="531.03553390593" y2="260.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="527.5" y1="257" x2="531.03553390593" y2="253.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <line x1="461" y1="208" x2="464.53553390593" y2="211.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="461" y1="208" x2="464.53553390593" y2="204.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <line x1="535" y1="297" x2="525" y2="297" style="stroke:#333;stroke-width:1;"/>
-   <line x1="540" y1="415" x2="550" y2="415" style="stroke:#333;stroke-width:1;"/>
-   <line x1="525" y1="297" x2="540" y2="415" style="stroke:#333;stroke-width:1;"/>
-   <line x1="527.5" y1="297" x2="531.03553390593" y2="300.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="527.5" y1="297" x2="531.03553390593" y2="293.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <line x1="545" y1="415" x2="541.46446609407" y2="418.53553390593" style="stroke:#333;stroke-width:2;"/>
-   <line x1="545" y1="415" x2="541.46446609407" y2="411.46446609407" style="stroke:#333;stroke-width:2;"/>
-   <rect width="72" height="20" x="682" y="170" style="fill:#007;stroke:black;"/>
-   <text width="72" height="20" x="687" y="184" style="fill:#fff;" font-family="Arial" font-size="16px"> actors</text>
-   <rect width="72" height="20" x="682" y="190" style="fill:#aea;stroke:black;"/>
-   <text width="72" height="20" x="687" y="204" style="fill:black;" font-family="Arial" font-size="16px">id</text>
-   <rect width="72" height="20" x="682" y="210" style="fill:none;stroke:black;"/>
-   <text width="72" height="20" x="687" y="224" style="fill:black;" font-family="Arial" font-size="16px">name</text>
-   <rect width="72" height="20" x="682" y="230" style="fill:none;stroke:black;"/>
-   <text width="72" height="20" x="687" y="244" style="fill:black;" font-family="Arial" font-size="16px">surname</text>
-   <rect width="72" height="20" x="682" y="250" style="fill:none;stroke:black;"/>
-   <text width="72" height="20" x="687" y="264" style="fill:black;" font-family="Arial" font-size="16px">birth</text>
-   <rect width="43" height="20" x="550" y="385" style="fill:#007;stroke:black;"/>
-   <text width="43" height="20" x="555" y="399" style="fill:#fff;" font-family="Arial" font-size="16px"> fee</text>
-   <rect width="43" height="20" x="550" y="405" style="fill:#aea;stroke:black;"/>
-   <text width="43" height="20" x="555" y="419" style="fill:black;" font-family="Arial" font-size="16px">id</text>
-   <rect width="43" height="20" x="550" y="425" style="fill:none;stroke:black;"/>
-   <text width="43" height="20" x="555" y="439" style="fill:black;" font-family="Arial" font-size="16px">cash</text>
-   <rect width="99" height="20" x="357" y="178" style="fill:#007;stroke:black;"/>
-   <text width="99" height="20" x="362" y="192" style="fill:#fff;" font-family="Arial" font-size="16px"> films</text>
-   <rect width="99" height="20" x="357" y="198" style="fill:#aea;stroke:black;"/>
-   <text width="99" height="20" x="362" y="212" style="fill:black;" font-family="Arial" font-size="16px">id</text>
-   <rect width="99" height="20" x="357" y="218" style="fill:none;stroke:black;"/>
-   <text width="99" height="20" x="362" y="232" style="fill:black;" font-family="Arial" font-size="16px">title</text>
-   <rect width="99" height="20" x="357" y="238" style="fill:none;stroke:black;"/>
-   <text width="99" height="20" x="362" y="252" style="fill:black;" font-family="Arial" font-size="16px">director</text>
-   <rect width="99" height="20" x="357" y="258" style="fill:none;stroke:black;"/>
-   <text width="99" height="20" x="362" y="272" style="fill:black;" font-family="Arial" font-size="16px">release_date</text>
-   <rect width="99" height="20" x="357" y="278" style="fill:none;stroke:black;"/>
-   <text width="99" height="20" x="362" y="292" style="fill:black;" font-family="Arial" font-size="16px">budget</text>
-   <rect width="99" height="20" x="357" y="298" style="fill:none;stroke:black;"/>
-   <text width="99" height="20" x="362" y="312" style="fill:black;" font-family="Arial" font-size="16px">box_office</text>
-   <rect width="99" height="20" x="357" y="318" style="fill:none;stroke:black;"/>
-   <text width="99" height="20" x="362" y="332" style="fill:black;" font-family="Arial" font-size="16px">running_time</text>
-   <rect width="99" height="20" x="357" y="338" style="fill:none;stroke:black;"/>
-   <text width="99" height="20" x="362" y="352" style="fill:black;" font-family="Arial" font-size="16px">studio_id</text>
-   <rect width="99" height="20" x="357" y="358" style="fill:none;stroke:black;"/>
-   <text width="99" height="20" x="362" y="372" style="fill:black;" font-family="Arial" font-size="16px">genre</text>
-   <rect width="91" height="20" x="535" y="227" style="fill:#007;stroke:black;"/>
-   <text width="91" height="20" x="540" y="241" style="fill:#fff;" font-family="Arial" font-size="16px"> films_actors</text>
-   <rect width="91" height="20" x="535" y="247" style="fill:#aea;stroke:black;"/>
-   <text width="91" height="20" x="540" y="261" style="fill:black;" font-family="Arial" font-size="16px">film_id</text>
-   <rect width="91" height="20" x="535" y="267" style="fill:#aea;stroke:black;"/>
-   <text width="91" height="20" x="540" y="281" style="fill:black;" font-family="Arial" font-size="16px">actor_id</text>
-   <rect width="91" height="20" x="535" y="287" style="fill:none;stroke:black;"/>
-   <text width="91" height="20" x="540" y="301" style="fill:black;" font-family="Arial" font-size="16px">fee_id</text>
-   <rect width="68" height="20" x="200" y="245" style="fill:#007;stroke:black;"/>
-   <text width="68" height="20" x="205" y="259" style="fill:#fff;" font-family="Arial" font-size="16px"> studios</text>
-   <rect width="68" height="20" x="200" y="265" style="fill:#aea;stroke:black;"/>
-   <text width="68" height="20" x="205" y="279" style="fill:black;" font-family="Arial" font-size="16px">id</text>
-   <rect width="68" height="20" x="200" y="285" style="fill:none;stroke:black;"/>
-   <text width="68" height="20" x="205" y="299" style="fill:black;" font-family="Arial" font-size="16px">name</text>
-   <rect width="68" height="20" x="200" y="305" style="fill:none;stroke:black;"/>
-   <text width="68" height="20" x="205" y="319" style="fill:black;" font-family="Arial" font-size="16px">founded</text>
+<svg viewBox="209 63 872 460" width="663px" height="397px" xmlns="http://www.w3.org/2000/svg" version="1.1">
+   <line x1="401" y1="248" x2="391" y2="248" style="stroke:#333;stroke-width:1;"/>
+   <line x1="302" y1="180" x2="292" y2="180" style="stroke:#333;stroke-width:1;"/>
+   <line x1="391" y1="248" x2="302" y2="180" style="stroke:#333;stroke-width:1;"/>
+   <line x1="393.5" y1="248" x2="397.03553390593" y2="251.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="393.5" y1="248" x2="397.03553390593" y2="244.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="297" y1="180" x2="300.53553390593" y2="183.53553390593" style="stroke:#333;stroke-width:2;"/>
+   <line x1="297" y1="180" x2="300.53553390593" y2="176.46446609407" style="stroke:#333;stroke-width:2;"/>
+   <line x1="701" y1="180" x2="711" y2="180" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="775" y1="110" x2="785" y2="110" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="711" y1="180" x2="775" y2="110" style="stroke:#cb0;stroke-width:1;"/>
+   <line x1="708.5" y1="180" x2="704.96446609407" y2="183.53553390593" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="708.5" y1="180" x2="704.96446609407" y2="176.46446609407" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="780" y1="110" x2="776.46446609407" y2="113.53553390593" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="780" y1="110" x2="776.46446609407" y2="106.46446609407" style="stroke:#cb0;stroke-width:2;"/>
+   <line x1="610" y1="160" x2="600" y2="160" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="510" y1="108" x2="500" y2="108" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="600" y1="160" x2="510" y2="108" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="602.5" y1="160" x2="606.03553390593" y2="163.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="602.5" y1="160" x2="606.03553390593" y2="156.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="505" y1="108" x2="508.53553390593" y2="111.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="505" y1="108" x2="508.53553390593" y2="104.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="500" y1="322" x2="510" y2="322" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="510" y1="108" x2="500" y2="108" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="510" y1="322" x2="510" y2="108" style="stroke:#b0b;stroke-width:1;"/>
+   <line x1="507.5" y1="322" x2="503.96446609407" y2="325.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="507.5" y1="322" x2="503.96446609407" y2="318.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="505" y1="108" x2="508.53553390593" y2="111.53553390593" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="505" y1="108" x2="508.53553390593" y2="104.46446609407" style="stroke:#b0b;stroke-width:2;"/>
+   <line x1="404" y1="342" x2="394" y2="342" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="394" y1="415" x2="404" y2="415" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="394" y1="342" x2="394" y2="415" style="stroke:#0b0;stroke-width:1;"/>
+   <line x1="396.5" y1="342" x2="400.03553390593" y2="345.53553390593" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="396.5" y1="342" x2="400.03553390593" y2="338.46446609407" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="399" y1="415" x2="395.46446609407" y2="418.53553390593" style="stroke:#0b0;stroke-width:2;"/>
+   <line x1="399" y1="415" x2="395.46446609407" y2="411.46446609407" style="stroke:#0b0;stroke-width:2;"/>
+   <rect width="72" height="20" x="785" y="80" style="fill:#007;stroke:black;"/>
+   <text width="72" height="20" x="790" y="94" style="fill:#fff;" font-family="Arial" font-size="16px"> actors</text>
+   <rect width="72" height="20" x="785" y="100" style="fill:#aea;stroke:black;"/>
+   <text width="72" height="20" x="790" y="114" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="72" height="20" x="785" y="120" style="fill:none;stroke:black;"/>
+   <text width="72" height="20" x="790" y="134" style="fill:black;" font-family="Arial" font-size="16px">name</text>
+   <rect width="72" height="20" x="785" y="140" style="fill:none;stroke:black;"/>
+   <text width="72" height="20" x="790" y="154" style="fill:black;" font-family="Arial" font-size="16px">surname</text>
+   <rect width="72" height="20" x="785" y="160" style="fill:none;stroke:black;"/>
+   <text width="72" height="20" x="790" y="174" style="fill:black;" font-family="Arial" font-size="16px">dob</text>
+   <rect width="99" height="20" x="401" y="78" style="fill:#007;stroke:black;"/>
+   <text width="99" height="20" x="406" y="92" style="fill:#fff;" font-family="Arial" font-size="16px"> films</text>
+   <rect width="99" height="20" x="401" y="98" style="fill:#aea;stroke:black;"/>
+   <text width="99" height="20" x="406" y="112" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="99" height="20" x="401" y="118" style="fill:none;stroke:black;"/>
+   <text width="99" height="20" x="406" y="132" style="fill:black;" font-family="Arial" font-size="16px">title</text>
+   <rect width="99" height="20" x="401" y="138" style="fill:none;stroke:black;"/>
+   <text width="99" height="20" x="406" y="152" style="fill:black;" font-family="Arial" font-size="16px">director</text>
+   <rect width="99" height="20" x="401" y="158" style="fill:none;stroke:black;"/>
+   <text width="99" height="20" x="406" y="172" style="fill:black;" font-family="Arial" font-size="16px">release_date</text>
+   <rect width="99" height="20" x="401" y="178" style="fill:none;stroke:black;"/>
+   <text width="99" height="20" x="406" y="192" style="fill:black;" font-family="Arial" font-size="16px">budget</text>
+   <rect width="99" height="20" x="401" y="198" style="fill:none;stroke:black;"/>
+   <text width="99" height="20" x="406" y="212" style="fill:black;" font-family="Arial" font-size="16px">box_office</text>
+   <rect width="99" height="20" x="401" y="218" style="fill:none;stroke:black;"/>
+   <text width="99" height="20" x="406" y="232" style="fill:black;" font-family="Arial" font-size="16px">running_time</text>
+   <rect width="99" height="20" x="401" y="238" style="fill:none;stroke:black;"/>
+   <text width="99" height="20" x="406" y="252" style="fill:black;" font-family="Arial" font-size="16px">studio_id</text>
+   <rect width="91" height="20" x="610" y="130" style="fill:#007;stroke:black;"/>
+   <text width="91" height="20" x="615" y="144" style="fill:#fff;" font-family="Arial" font-size="16px"> films_actors</text>
+   <rect width="91" height="20" x="610" y="150" style="fill:#aea;stroke:black;"/>
+   <text width="91" height="20" x="615" y="164" style="fill:black;" font-family="Arial" font-size="16px">film_id</text>
+   <rect width="91" height="20" x="610" y="170" style="fill:#aea;stroke:black;"/>
+   <text width="91" height="20" x="615" y="184" style="fill:black;" font-family="Arial" font-size="16px">actor_id</text>
+   <rect width="91" height="20" x="610" y="190" style="fill:none;stroke:black;"/>
+   <text width="91" height="20" x="615" y="204" style="fill:black;" font-family="Arial" font-size="16px">fee</text>
+   <rect width="96" height="20" x="404" y="292" style="fill:#007;stroke:black;"/>
+   <text width="96" height="20" x="409" y="306" style="fill:#fff;" font-family="Arial" font-size="16px"> films_genres</text>
+   <rect width="96" height="20" x="404" y="312" style="fill:#aea;stroke:black;"/>
+   <text width="96" height="20" x="409" y="326" style="fill:black;" font-family="Arial" font-size="16px">film_id</text>
+   <rect width="96" height="20" x="404" y="332" style="fill:#aea;stroke:black;"/>
+   <text width="96" height="20" x="409" y="346" style="fill:black;" font-family="Arial" font-size="16px">genre_id</text>
+   <rect width="58" height="20" x="404" y="385" style="fill:#007;stroke:black;"/>
+   <text width="58" height="20" x="409" y="399" style="fill:#fff;" font-family="Arial" font-size="16px"> genres</text>
+   <rect width="58" height="20" x="404" y="405" style="fill:#aea;stroke:black;"/>
+   <text width="58" height="20" x="409" y="419" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="58" height="20" x="404" y="425" style="fill:none;stroke:black;"/>
+   <text width="58" height="20" x="409" y="439" style="fill:black;" font-family="Arial" font-size="16px">genre</text>
+   <rect width="68" height="20" x="224" y="150" style="fill:#007;stroke:black;"/>
+   <text width="68" height="20" x="229" y="164" style="fill:#fff;" font-family="Arial" font-size="16px"> studios</text>
+   <rect width="68" height="20" x="224" y="170" style="fill:#aea;stroke:black;"/>
+   <text width="68" height="20" x="229" y="184" style="fill:black;" font-family="Arial" font-size="16px">id</text>
+   <rect width="68" height="20" x="224" y="190" style="fill:none;stroke:black;"/>
+   <text width="68" height="20" x="229" y="204" style="fill:black;" font-family="Arial" font-size="16px">name</text>
+   <rect width="68" height="20" x="224" y="210" style="fill:none;stroke:black;"/>
+   <text width="68" height="20" x="229" y="224" style="fill:black;" font-family="Arial" font-size="16px">founded</text>
 </svg>
