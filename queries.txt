@@ -58,7 +58,7 @@ GROUP BY
 HAVING 
   COUNT(b.surname) = 1
 
-###
+###   ###   ###   ###   ###   ###   ###   ###   ###   ###
 
 SELECT 
   ANY_VALUE(CONCAT(actors.name, ' ', actors.surname)) 
@@ -72,7 +72,24 @@ HAVING
 ORDER BY
   actor_full_name
 
-###
+###   ###   ###   ###   ###   ###   ###   ###   ###   ###
+
+(Namesake only)
+
+SELECT   
+  CONCAT(a.name, ' ', a.surname) AS actor_full_name  
+FROM 
+  actors AS a 
+INNER JOIN 
+  actors AS b 
+ON 
+  a.surname = b.surname 
+AND 
+  a.id != b.id
+ORDER BY
+  a.surname
+
+###   ###   ###   ###   ###   ###   ###   ###   ###   ###
 
 
 -----------------------------------------------------------
