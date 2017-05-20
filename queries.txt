@@ -87,10 +87,22 @@ ON
 AND 
   a.id != b.id
 ORDER BY
-  a.surname
+  actor_full_name
 
 ###   ###   ###   ###   ###   ###   ###   ###   ###   ###
 
+SELECT
+  CONCAT(a.name, ' ', a.surname) AS actor_full_name
+FROM 
+  actors AS a 
+LEFT JOIN 
+  actors AS b 
+ON 
+  a.surname = b.surname AND a.id != b.id
+WHERE
+  b.id IS NULL
+ORDER BY
+  actor_full_name
 
 -----------------------------------------------------------
 SELECT  
